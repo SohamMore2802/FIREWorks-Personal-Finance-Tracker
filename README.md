@@ -1,12 +1,57 @@
 # 🚀 F.I.R.E. WORKS — Gen-Z Personal Finance & Wealth Compounding Engine
 
-**F.I.R.E. WORKS** is a full-stack, dynamic, gamified personal finance platform engineered for Gen-Z financial independence and early retirement (F.I.R.E.). 
+[![React](https://img.shields.io/badge/React-18.3.1-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8.2.1-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-v18+-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-4.x-000000?logo=express&logoColor=white)](https://expressjs.com/)
+[![Chart.js](https://img.shields.io/badge/Chart.js-4.x-FF6384?logo=chart.js&logoColor=white)](https://www.chartjs.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+**F.I.R.E. WORKS** is a full-stack, dynamic, gamified personal finance platform engineered for Gen-Z financial independence and early retirement (F.I.R.E.).
 
 Featuring interactive Chart.js analytics, sassy AI mentorship from **Kash the Red Panda**, turn-based **Credit Dungeon** boss battles, real-time market telemetry tickers, **Vision OCR** receipt scanning, and industry-benchmark competitor tools (*Subscriptions Optimizer*, *50/30/20 Budget Splitter*, *Debt Freedom Planner*, *Tax Saver Estimator*).
 
 ---
 
-## 🌟 Key Features & Sub-Pages
+## 🛠️ Complete Technical Stack
+
+| Layer | Technology | Purpose & Implementation |
+| :--- | :--- | :--- |
+| **Frontend Framework** | `React 18` + `Vite 8` | Lightning-fast component rendering with HMR (Hot Module Replacement) and 0ms latency feel. |
+| **Backend Server** | `Node.js` + `Express.js` | RESTful API backend handling transactions, goal deposits, Kash AI chat, and RPG dungeon actions. |
+| **Data Visualization** | `Chart.js` + `React-ChartJS-2` | Interactive Doughnut, Bar, and Line compounding charts with hardware-accelerated animations. |
+| **Design System** | `Vanilla CSS3 Glassmorphism` | Obsidian dark theme (`#05060a`), Champagne Gold (`#FFC72c`), Cyber Cyan (`#00F0FF`), and Aurora Purple gradients. |
+| **Typography** | `Google Fonts` | *Outfit*, *Space Grotesk*, *Plus Jakarta Sans*, and *JetBrains Mono* monospace data fonts. |
+| **Iconography** | `Lucide React` | Modern lightweight vector icon kit. |
+| **Audio Synthesizer** | `Web Audio API` | Browser-native `AudioContext` frequency oscillator synthesis generating interactive UI click, laser scan, and RPG strike audio FX. |
+| **Interactive Physics** | `Canvas Confetti` | Particle explosion bursts on goal deposits, quiz completions, and social story badge creation. |
+| **AI Vision Simulator** | `Optical Character Recognition` | Simulated AI OCR parser extracting merchant, total amount, line items, and confidence metrics. |
+| **Authentication Core** | `JWT & OAuth 2.0` | Multi-factor authentication supporting email/password sign-in and Google / Apple single-click OAuth. |
+
+---
+
+## 📐 System Architecture Diagram
+
+```mermaid
+graph TD
+    User["🌐 User (Browser Client)"] -->|HTTP / REST| ViteFrontend["⚡ Vite + React Frontend"]
+    ViteFrontend -->|State Updates| SoundSynthesizer["🔊 Web Audio API Synthesizer"]
+    ViteFrontend -->|Chart Canvas| ChartJS["📊 Chart.js Visualization"]
+    ViteFrontend -->|REST API Requests| NodeExpress["⚡ Express.js REST API Server (Port 5000)"]
+    
+    subgraph Express Backend Engine
+        NodeExpress -->|GET /api/dashboard| DashboardAPI["📈 Dashboard & Stats Engine"]
+        NodeExpress -->|POST /api/auth| AuthAPI["🔑 JWT & OAuth Handler"]
+        NodeExpress -->|POST /api/kash/chat| KashAI["🐼 Kash AI Red Panda Engine"]
+        NodeExpress -->|POST /api/ocr/scan| VisionOCR["📄 Vision OCR Receipt Scanner"]
+        NodeExpress -->|POST /api/dungeon/action| CreditDungeon["⚔️ Credit Dungeon Boss Battle"]
+        NodeExpress -->|GET /api/live/stream| TelemetryStream["📻 Real-Time Live Telemetry Stream"]
+    end
+```
+
+---
+
+## 🌟 Key Features & Navigation Modules
 
 1. **Personal Finance Dashboard (`/dashboard`)**:
    - Monthly income & expense tracking with Chart.js Doughnut & Bar charts.
@@ -52,14 +97,6 @@ Featuring interactive Chart.js analytics, sassy AI mentorship from **Kash the Re
 
 13. **Instagram Story Badge Generator (`/social`)**:
     - 9:16 mobile story card modal with celebratory confetti particle bursts.
-
----
-
-## 🛠️ Technology Stack
-
-- **Frontend**: Vite, React, Lucide React, Chart.js, React-ChartJS-2, Canvas-Confetti, Web Audio API Sound Synthesizer.
-- **Backend**: Node.js, Express.js REST API endpoints.
-- **Styling**: Hardware-accelerated GPU dark obsidian CSS theme with glassmorphism & custom typography (*Outfit*, *Space Grotesk*, *Plus Jakarta Sans*).
 
 ---
 
