@@ -95,7 +95,6 @@ app.post('/api/auth/login', (req, res) => {
 
   const found = users.find(u => u.email.toLowerCase() === email.toLowerCase() && u.password === password);
   if (!found) {
-    // If logging in with demo user@fireworks.io or any credentials, create/authorize user
     const demoUser = {
       id: `u-${Date.now()}`,
       name: email.split('@')[0],
@@ -452,6 +451,10 @@ app.post('/api/fire/calculate', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`⚡ PIXXELHACK 2.0 Backend Server running on http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`⚡ PIXXELHACK 2.0 Backend Server running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
